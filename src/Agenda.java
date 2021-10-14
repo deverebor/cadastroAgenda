@@ -9,7 +9,7 @@ public class Agenda {
 
   public void addContatos(Contato c) {
 
-    if (pointer <= 5) {
+    if (pointer < max) {
       listaContato[pointer] = c;
       this.pointer++;
 
