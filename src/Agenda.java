@@ -9,7 +9,7 @@ public class Agenda {
 
   public void addContatos(Contato c) {
 
-    if (pointer < max) {
+    if (pointer <= max) {
       listaContato[pointer] = c;
       this.pointer++;
 
@@ -18,6 +18,21 @@ public class Agenda {
       System.err.println("[ERROR]: Já existe contatos demais na agenda, remova algum.");
     }
 
+  }
+
+  public void removeContato(Contato c) {
+
+    if (listaContato == null || pointer < 0) {
+      System.err.println("[ERROR]: Não existe contatos na agenda, adicione algum.");
+      System.err.println("Listaremos os contatos atuais.\n");
+
+      listarContatos();
+    } else {
+      listaContato[pointer] = c;
+      this.pointer--;
+
+      System.out.println("Remoção realizada com sucesso!");
+    }
   }
 
   public void listarContatos() {
