@@ -24,9 +24,7 @@ public class Agenda {
 
     if (listaContato == null || pointer < 0) {
       System.err.println("[ERROR]: Não existe contatos na agenda, adicione algum.");
-      System.err.println("Listaremos os contatos atuais.\n");
 
-      listarContatos();
     } else {
       listaContato[pointer] = c;
       this.pointer--;
