@@ -14,11 +14,18 @@ public class App {
         cnt2.setNome("Geisielle Souza");
         cnt2.setTelefone("71 9 9762-5434");
         cnt2.setEndereco("Pau da Lima");
-        cnt2.setEmail("geise@email.com");
+        cnt2.setEmail("geise@email.com\n");
 
         agd.addContatos(cnt2);
 
-        agd.removeContato(cnt1);
+        Contato cnt3 = new Contato();
+        cnt2.setNome("Astrogildo Souza");
+        cnt2.setTelefone("71 9 9973-6545");
+        cnt2.setEndereco("Pituba");
+        cnt2.setEmail("astrogildo@email.com");
+
+        // agd.alteraContatos(cnt2);
+        // agd.removeContatos(cnt1);
 
         agd.listarContatos();
     }
