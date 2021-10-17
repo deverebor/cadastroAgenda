@@ -33,16 +33,23 @@ public class Agenda {
     }
   }
 
-  public void alteraContatos(Contato c, Integer pointer) {
+  public void alteraContatos(Contato c) {
+
+    for (int i = 0; i < pointer; i++) {
+      if (c.equals(listaContato[i])) {
+        listaContato[i].setNome("Default");
+        listaContato[i].setEmail("default@email.com");
+        listaContato[i].setTelefone("0800 7777 7000");
+        listaContato[i].setEndereco("Largo da lapinha");
+
+        System.out.println("Contato alterado com sucesso!");
+
+      }
+
+    }
 
     if (listaContato == null || pointer < 0) {
       System.err.println("[ERROR]: Não existe contatos na agenda, adicione algum.");
-
-    } else {
-      this.pointer--;
-      listaContato[pointer] = c;
-
-      System.out.println("Contato alterado com sucesso!");
     }
   }
 

@@ -19,12 +19,12 @@ public class App {
         agd.addContatos(cnt2);
 
         Contato cnt3 = new Contato();
-        cnt2.setNome("Astrogildo Souza");
-        cnt2.setTelefone("71 9 9973-6545");
-        cnt2.setEndereco("Pituba");
-        cnt2.setEmail("astrogildo@email.com");
+        cnt3.setNome("Astrogildo Souza");
+        cnt3.setTelefone("71 9 9973-6545");
+        cnt3.setEndereco("Pituba");
+        cnt3.setEmail("astrogildo@email.com");
 
-        // agd.alteraContatos(cnt2);
+        agd.alteraContatos(cnt2);
         // agd.removeContatos(cnt1);
 
         agd.listarContatos();
