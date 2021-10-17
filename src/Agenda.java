@@ -26,8 +26,12 @@ public class Agenda {
       System.err.println("[ERROR]: Não existe contatos na agenda, adicione algum.");
 
     } else {
-      this.pointer--;
-      listaContato[pointer] = c;
+      for (int i = 0; i < pointer; i++) {
+        listaContato[i].setEmail(null);
+        listaContato[i].setTelefone(null);
+        listaContato[i].setEndereco(null);
+        listaContato[i].setNome(null);
+      }
 
       System.out.println("\nContato removido com sucesso!\n");
     }
