@@ -27,10 +27,7 @@ public class Agenda {
 
     } else {
       for (int i = 0; i < pointer; i++) {
-        listaContato[i].setEmail(null);
-        listaContato[i].setTelefone(null);
-        listaContato[i].setEndereco(null);
-        listaContato[i].setNome(null);
+        listaContato[i] = null;
       }
 
       System.out.println("\nContato removido com sucesso!\n");
